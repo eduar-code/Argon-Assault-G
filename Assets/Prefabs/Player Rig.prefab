@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4541487494868329726}
   - component: {fileID: 4541487494868329721}
   - component: {fileID: 4541487494868329720}
+  - component: {fileID: 6802199463711800066}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -84,6 +85,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4541487494868329723}
   m_Enabled: 1
+--- !u!114 &6802199463711800066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541487494868329723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 4541487494868329726}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &4541487495181054154
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +210,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser Right
       objectReference: {fileID: 0}
+    - target: {fileID: 3885700090030411502, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885700090030411502, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6176677240069112576}
+    - target: {fileID: 3885700090030411502, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 7606901070329951033}
     - target: {fileID: 4623102917659240325, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.91
@@ -266,5 +339,15 @@ PrefabInstance:
 --- !u!4 &761210375616221473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8327678655848769829, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
+  m_PrefabInstance: {fileID: 8719399131778758660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6176677240069112576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3221886181080496900, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
+  m_PrefabInstance: {fileID: 8719399131778758660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7606901070329951033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1193633569567378237, guid: 55c7245f81a404548942cc0f263439e2, type: 3}
   m_PrefabInstance: {fileID: 8719399131778758660}
   m_PrefabAsset: {fileID: 0}
